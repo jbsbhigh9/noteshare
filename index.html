@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoteShare</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px; }
+    h1 { color: #343a40; }
+    a { display: block; margin: 10px 0; color: #007bff; text-decoration: none; }
+    form { margin-top: 40px; }
+    input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
+    button { padding: 10px 20px; background: #28a745; color: white; border: none; }
+  </style>
+</head>
+<body>
+  <h1>📁 Welcome to NoteShare</h1>
+  <p>Download files:</p>
+  <a href="files/sample-video.mp4" download>🎥 Sample Video</a>
+  <a href="files/sample-audio.mp3" download>🎧 Sample Audio</a>
+  <a href="files/sample-pdf.pdf" download>📄 Sample PDF</a>
+  <a href="files/sample-zip.zip" download>📦 Sample ZIP</a>
+  <a href="files/sample-apk.apk" download>📱 Sample APK</a>
+
+  <h2>📬 Contact Us</h2>
+  <form action="https://formsubmit.co/your-email@example.com" method="POST">
+    <input type="text" name="name" placeholder="Your name" required>
+    <input type="email" name="email" placeholder="Your email" required>
+    <textarea name="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
