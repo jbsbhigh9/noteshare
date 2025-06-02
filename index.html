@@ -1,33 +1,68 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
   <meta charset="UTF-8">
-  <title>NoteShare</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NoteShare by jbsbhigh9</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f8f9fa; padding: 20px; }
-    h1 { color: #343a40; }
-    a { display: block; margin: 10px 0; color: #007bff; text-decoration: none; }
-    form { margin-top: 40px; }
-    input, textarea { width: 100%; padding: 10px; margin: 10px 0; }
-    button { padding: 10px 20px; background: #28a745; color: white; border: none; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 40px;
+    }
+    h1 {
+      color: #222;
+    }
+    .files a {
+      display: block;
+      margin: 10px 0;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    form {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      display: inline-block;
+      border-radius: 10px;
+    }
+    input, textarea {
+      width: 300px;
+      padding: 10px;
+      margin: 8px 0;
+    }
+    button {
+      padding: 10px 20px;
+      background: #0066cc;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #004499;
+    }
   </style>
 </head>
 <body>
-  <h1>📁 Welcome to NoteShare</h1>
-  <p>Download files:</p>
-  <a href="files/sample-video.mp4" download>🎥 Sample Video</a>
-  <a href="files/sample-audio.mp3" download>🎧 Sample Audio</a>
-  <a href="files/sample-pdf.pdf" download>📄 Sample PDF</a>
-  <a href="files/sample-zip.zip" download>📦 Sample ZIP</a>
-  <a href="files/sample-apk.apk" download>📱 Sample APK</a>
 
-  <h2>📬 Contact Us</h2>
-  <form action="https://formsubmit.co/your-email@example.com" method="POST">
-    <input type="text" name="name" placeholder="Your name" required>
-    <input type="email" name="email" placeholder="Your email" required>
-    <textarea name="message" placeholder="Your message" required></textarea>
-    <button type="submit">Send</button>
+  <h1>🎉 NoteShare — ফাইল শেয়ার করার সহজ উপায়!</h1>
+
+  <div class="files">
+    <a href="files/sample.pdf" target="_blank">📄 PDF File</a>
+    <a href="files/sample.zip" download>🗜️ ZIP File</a>
+    <a href="files/sample.apk" download>📱 APK File</a>
+    <a href="files/sample.mp3" target="_blank">🎵 Audio File</a>
+    <a href="files/sample.mp4" target="_blank">🎬 Video File</a>
+  </div>
+
+  <form action="https://formspree.io/f/mayvlzrb" method="POST">
+    <h3>📬 যোগাযোগ করুন</h3>
+    <input type="text" name="name" placeholder="আপনার নাম" required><br>
+    <input type="email" name="email" placeholder="আপনার ইমেইল" required><br>
+    <textarea name="message" rows="5" placeholder="আপনার মেসেজ" required></textarea><br>
+    <button type="submit">পাঠান</button>
   </form>
+
 </body>
 </html>
